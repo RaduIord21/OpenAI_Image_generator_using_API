@@ -24,7 +24,6 @@ while True:
     )
     json_file = openai.Model.list()
     WriteJson(image)
-
     for i in range(10):
         print(image["data"][i]["url"] + "\n")
     if(not input("Continue ?").lower().startswith("y")):
